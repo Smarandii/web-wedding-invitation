@@ -5,10 +5,3 @@ services:
     build: .
     ports:
       - "2070:2070"
-    env_file:
-      - .env
-    volumes:
-      - ./public/pictures:/app/public/pictures
-      - ./public/main.html:/app/public/main.html
-      - ./public/styles.css:/app/public/styles.css
-      - ./public/script.js:/app/public/script.js

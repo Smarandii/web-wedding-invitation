@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
-	"os"
 	"web-wedding-invitation/webapp/sheets"
 )
 
@@ -16,8 +15,14 @@ type RSVPData struct {
 }
 
 func main() {
+	// Construct the credentials JSON from environment variables
+	credentialsJSON, err := sheets.ConstructCredentialsJSON()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	// Initialize sheets service
-	sheetService, err := sheets.NewSheetService(os.Getenv("SERVICE_ACCOUNT_JSON"))
+	sheetService, err := sheets.NewSheetService(credentialsJSON)
 	if err != nil {
 		log.Fatal(err)
 	}

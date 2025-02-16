@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Василя & Олег — Wedding Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="hero-section">
+    <div class="hero-content">
+      <div class="names-heart">
+        <span class="bride-name">Василя</span>
+        <span class="heart">&hearts;</span>
+        <span class="groom-name">Олег</span>
+      </div>
+      <h1 class="script-heading">Приглашаем на нашу свадьбу!</h1>
+      <p class="date">02.07.2025</p>
+      <p class="countdown-label">до праздника осталось:</p>
+      <div class="countdown">00 недель 00 дней 00 часов 00 минут</div>
+    </div>
+    <div class="hero-images">
+      <div class="image-frame">
+        <img src="/pictures/heroes/bride-kid.jpg" alt="Фото невесты" />
+        <span class="image-caption">Василя</span>
+      </div>
+      <div class="image-frame">
+        <img src="/pictures/heroes/groom-kid.jpg" alt="Фото жениха" />
+        <span class="image-caption">Олег</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="timeline-section">
+    <h2 class="section-title">Что вас ждет?</h2>
+    <div class="timeline">
+      <div class="time-item">
+        <div class="time">14:00</div>
+        <div class="description">Начало мероприятия, сбор гостей</div>
+      </div>
+      <div class="time-item">
+        <div class="time">15:00</div>
+        <div class="description">Завершение церемонии и фотосессии</div>
+      </div>
+      <div class="time-item">
+        <div class="time">17:00</div>
+        <div class="description">Начало "подвижной" части мероприятия</div>
+      </div>
+      <div class="time-item">
+        <div class="time">23:00</div>
+        <div class="description">Завершение мероприятия</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="venue-section">
+    <h2 class="section-title">Место проведения</h2>
+    <div class="venue-title">
+      <a href="https://teplica-park.ru/kontakty/" class="location-link" target="_blank">
+        <span class="venue-name">Теплица Парк</span>
+        <span class="venue-subtitle">Нажмите, чтобы узнать больше</span>
+      </a>
+    </div>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <img src="/pictures/place/1.jpg" alt="Venue photo 5" class="carousel-item active" />
+        <img src="/pictures/place/2.jpg" alt="Venue photo 2" class="carousel-item" />
+        <img src="/pictures/place/3.jpg" alt="Venue photo 3" class="carousel-item" />
+        <img src="/pictures/place/4.jpg" alt="Venue photo 4" class="carousel-item" />
+        <img src="/pictures/place/5.jpg" alt="Venue photo 1" class="carousel-item" />
+        <img src="/pictures/place/6.jpg" alt="Venue photo 6" class="carousel-item" />
+        <img src="/pictures/place/7.jpg" alt="Venue photo 7" class="carousel-item" />
+      </div>
+      <button class="carousel-prev">&lt;</button>
+      <button class="carousel-next">&gt;</button>
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section">
+    <div class="venue-section" style="display: flex; justify-content: center; overflow: hidden; height: auto; margin: 0 auto;">
+      <iframe src="https://yandex.com/map-widget/v1/?ll=37.214972%2C55.657327&mode=search&oid=189981695839&ol=biz&z=14.48" width="100%" height="400" frameborder="1" allowfullscreen="true" style="flex: 1;"></iframe>
+    </div>
+  </section>
+
+  <section class="dresscode-section">
+    <h2 class="section-title">Дресс-код</h2>
+    <img src="/pictures/miscellaneous/dress-code.png" alt="Dress code image" class="dresscode-image" />
+    <!-- Or show a collage of images that match the moodboard/dress code -->
+  </section>
+
+  <section class="wishes-section">
+    <h2 class="section-title">Пожелания от молодоженов</h2>
+    <div class="wishes-container">
+      <div class="wish-card">
+        <div class="wish-icon">🌸</div>
+        <h3>Не дарите цветы</h3>
+        <p>Их будет очень много — если очень хотите, лучше подарите подписку на цветы.</p>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">👗</div>
+        <h3>Не одевайся в белое</h3>
+        <p>Невеста хочет сиять в этот прекрасный день.</p>
+      </div>
+      <div class="wish-card">
+        <div class="wish-icon">💝</div>
+        <h3>Дарите деньги</h3>
+        <p>Это лучший способ поддержать молодую семью.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rsvp-section">
+    <h2 class="section-title">Ждать ли вас на празднике?</h2>
+    <form class="rsvp-form" id="rsvpForm">
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" required placeholder="Ваше имя" />
+      </div>
+      
+      <div class="form-group">
+        <label for="surname">Фамилия</label>
+        <input id="surname" name="surname" type="text" required placeholder="Ваша фамилия" />
+      </div>
+
+      <div class="form-group attendance-group">
+        <label>Присутствие</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="attendance" value="single" required />
+            <span class="radio-text">Приду</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="attendance" value="no" required />
+            <span class="radio-text">К сожалению, не смогу прийти</span>
+          </label>
+        </div>
+      </div>
+
+      <div id="familyMembers" class="family-members" style="display: none;">
+        <div class="family-members-header">
+          <h3>Члены семьи</h3>
+          <button type="button" class="add-member-btn">Добавить</button>
+        </div>
+        <div class="family-members-list">
+          <div class="family-member primary-member">
+            <!-- This will be filled by JS with the main guest's info -->
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Алкогольные предпочтения</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="alcohol" value="wine" required />
+            <span class="radio-text">Вино или шампанское</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="alcohol" value="strong" required />
+            <span class="radio-text">Крепкий алкоголь</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="alcohol" value="no" required />
+            <span class="radio-text">Не пью алкоголь</span>
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </section>
+
+  <section class="contacts-section">
+    <h2 class="section-title">Контакты организатора и ведущего</h2>
+    <p>Ведущий: <span><a href="https://t.me/vasilytikhonov" target="_blank">@vasilytikhonov</a></span></p>
+    <p>Организатор: <span><a href="https://t.me/Ira_Sherstneva" target="_blank">@Ira_Sherstneva</a></span></p>
+  </section>
+
+  <footer class="footer">
+    <h2 class="section-title" style="margin-bottom: 0;">С любовью, Олег и Василя.<br>Очень ждем вас на нашем празднике!</h2>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  wedding-site:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./public/pictures:/app/public/pictures
+      - ./public/main.html:/app/public/main.html
+      - ./public/styles.css:/app/public/styles.css
+      - ./public/script.js:/app/public/script.js

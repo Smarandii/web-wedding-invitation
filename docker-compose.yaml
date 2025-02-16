@@ -4,7 +4,7 @@ services:
   wedding-site:
     build: .
     ports:
-      - "8080:8080"
+      - "2070:2070"
     env_file:
       - .env
     volumes:

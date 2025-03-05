@@ -4,31 +4,20 @@
   <meta charset="UTF-8" />
   <title>Василя & Олег — Wedding Invitation</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js"></script>
 </head>
 <body>
   <header class="hero-section">
     <div class="hero-content">
-      <div class="names-heart">
-        <span class="bride-name">Василя</span>
-        <span class="heart">&hearts;</span>
-        <span class="groom-name">Олег</span>
+      <div class="caption-container">
+        <p class="cartoon-caption">Эти двое решили жениться</p>
+        <div class="wiggly-arrow"></div>
       </div>
-      <h1 class="script-heading">Приглашаем на нашу свадьбу!</h1>
-      <p class="date">02.07.2025</p>
+      <img src="/pictures/heroes/top-section-photo.png" alt="Bride and groom as kids" class="top-section-photo">
       <p class="countdown-label">до праздника осталось:</p>
       <div class="countdown">00 недель 00 дней 00 часов 00 минут</div>
-    </div>
-    <div class="hero-images">
-      <div class="image-frame">
-        <img src="/pictures/heroes/bride-kid.jpg" alt="Фото невесты" />
-        <span class="image-caption">Василя</span>
-      </div>
-      <div class="image-frame">
-        <img src="/pictures/heroes/groom-kid.jpg" alt="Фото жениха" />
-        <span class="image-caption">Олег</span>
-      </div>
     </div>
   </header>
 
@@ -36,20 +25,53 @@
     <h2 class="section-title">Что вас ждет?</h2>
     <div class="timeline">
       <div class="time-item">
-        <div class="time">14:00</div>
-        <div class="description">Начало мероприятия, сбор гостей</div>
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/welcome.png" alt="🥂" />
+        </div>
+        <div class="time">14:00 - 14:30</div>
+        <div class="description">СБОР ГОСТЕЙ</div>
       </div>
       <div class="time-item">
-        <div class="time">15:00</div>
-        <div class="description">Завершение церемонии и фотосессии</div>
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/ceremony.png" alt="💍" />
+        </div>
+        <div class="time">14:30 - 15:00</div>
+        <div class="description">ЦЕРЕМОНИЯ</div>
       </div>
       <div class="time-item">
-        <div class="time">17:00</div>
-        <div class="description">Начало "подвижной" части мероприятия</div>
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/photosession.png" alt="📸" />
+        </div>
+        <div class="time">15:00 - 15:30</div>
+        <div class="description">ФОТОСЕССИЯ МОЛОДОЖЕНОВ</div>
       </div>
       <div class="time-item">
-        <div class="time">23:00</div>
-        <div class="description">Завершение мероприятия</div>
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/food.png" alt="🍽️" />
+        </div>
+        <div class="time">15:30 - 17:00</div>
+        <div class="description">БАНКЕТ</div>
+      </div>
+      <div class="time-item">
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/disco.png" alt="🎵" />
+        </div>
+        <div class="time">17:00 - 21:00</div>
+        <div class="description">ВЕЧЕРИНКА</div>
+      </div>
+      <div class="time-item">
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/cake.png" alt="🎂" />
+        </div>
+        <div class="time">21:00 - 21:10</div>
+        <div class="description">СВАДЕБНЫЙ ДЕСЕРТ</div>
+      </div>
+      <div class="time-item">
+        <div class="time-icon">
+          <img src="/pictures/miscellaneous/disco.png" alt="🎂" />
+        </div>
+        <div class="time">21:10 - 23:00</div>
+        <div class="description">ПОСЛЕДНЯЯ ДИСКОТЕКА</div>
       </div>
     </div>
   </section>
@@ -64,11 +86,11 @@
     </div>
     <div class="carousel">
       <div class="carousel-inner">
-        <img src="/pictures/place/1.jpg" alt="Venue photo 5" class="carousel-item active" />
+        <img src="/pictures/place/1.jpg" alt="Venue photo 1" class="carousel-item active" />
         <img src="/pictures/place/2.jpg" alt="Venue photo 2" class="carousel-item" />
         <img src="/pictures/place/3.jpg" alt="Venue photo 3" class="carousel-item" />
         <img src="/pictures/place/4.jpg" alt="Venue photo 4" class="carousel-item" />
-        <img src="/pictures/place/5.jpg" alt="Venue photo 1" class="carousel-item" />
+        <img src="/pictures/place/5.jpg" alt="Venue photo 5" class="carousel-item" />
         <img src="/pictures/place/6.jpg" alt="Venue photo 6" class="carousel-item" />
         <img src="/pictures/place/7.jpg" alt="Venue photo 7" class="carousel-item" />
       </div>
@@ -179,8 +201,8 @@
 
   <section class="contacts-section">
     <h2 class="section-title">Контакты организатора и ведущего</h2>
-    <p>Ведущий: <span><a href="https://t.me/vasilytikhonov" target="_blank">@vasilytikhonov</a></span></p>
-    <p>Организатор: <span><a href="https://t.me/Ira_Sherstneva" target="_blank">@Ira_Sherstneva</a></span></p>
+    <p class="contact-text">Ведущий: <span><a href="https://t.me/vasilytikhonov" target="_blank">@vasilytikhonov</a></span></p>
+    <p class="contact-text">Организатор: <span><a href="https://t.me/Ira_Sherstneva" target="_blank">@Ira_Sherstneva</a></span></p>
   </section>
 
   <footer class="footer">

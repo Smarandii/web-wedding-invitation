@@ -661,7 +661,7 @@ max-width: 1400px;
   left: 0px;
   top: 173.22px;
 }
-.div14 {
+.im-comming-text {
   color: #fe4475;
   text-align: left;
   font-family: "Amatic SC";
@@ -677,7 +677,18 @@ max-width: 1400px;
   align-items: center;
   justify-content: flex-start;
 }
-.div15 {
+
+.attendance-form-bullet-point {
+  background-color: #fe4475;
+  position: absolute;
+  left: -30px;
+  top: 22px;
+  width: 15px;
+  height: 15px;
+  clip-path: circle();
+}
+
+.cant-come-text {
   color: #fe4475;
   text-align: left;
   font-family: "Amatic SC";
@@ -693,6 +704,7 @@ max-width: 1400px;
   align-items: center;
   justify-content: flex-start;
 }
+
 .attendance-question {
   color: #fe4475;
   text-align: left;

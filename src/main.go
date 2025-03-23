@@ -30,12 +30,13 @@ func main() {
 	// Create a specific file server for HTML and CSS
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Path == "/" {
-			http.ServeFile(w, r, "/app/public/main.html")
+			http.ServeFile(w, r, "/app/public/index.html")
 			return
 		}
-		if r.URL.Path == "/styles.css" {
+
+		if r.URL.Path == "/style.css" {
 			w.Header().Set("Content-Type", "text/css")
-			http.ServeFile(w, r, "/app/public/styles.css")
+			http.ServeFile(w, r, "/app/public/style.css")
 			return
 		}
 
@@ -49,7 +50,9 @@ func main() {
 	})
 
 	// Serve images from the pictures directory
-	http.Handle("/pictures/", http.StripPrefix("/pictures/", http.FileServer(http.Dir("/app/public/pictures"))))
+	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("/app/public/images"))))
+	// Serve fonts from the fonts directory
+	http.Handle("/fonts/", http.StripPrefix("/fonts/", http.FileServer(http.Dir("/app/public/fonts"))))
 
 	http.HandleFunc("/api/rsvp", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodPost {

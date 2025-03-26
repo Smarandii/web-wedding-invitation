@@ -62,7 +62,7 @@ func ConstructCredentialsJSON() (string, error) {
 	privateKey := os.Getenv("SERVICE_ACCOUNT_JSON_private_key")
 	// Convert literal \n to actual newlines
 	privateKey = strings.ReplaceAll(privateKey, "\\n", "\n")
-
+	log.Printf("privateKey: %v", privateKey)
 	credentials := map[string]interface{}{
 		"type":                        os.Getenv("SERVICE_ACCOUNT_JSON_type"),
 		"project_id":                  os.Getenv("SERVICE_ACCOUNT_JSON_project_id"),

@@ -18,7 +18,8 @@
   .root {
     transform: scale(calc(100vw / 1400));
     height: calc(100vw / 1400 * 100%);
-    width: 1400px; /* Keep original width for scaling */
+    width: 1400px;
+/* Keep original width for scaling */
   }
 }
 
@@ -37,7 +38,7 @@
 .wait-for-you-section-grouped {
   background: #fe4475;
   width: 1440px;
-  height: 2933px;
+  height: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -91,7 +92,7 @@
   align-items: center;
   justify-content: center;
 }
-.container {
+.polaroid-photos-composition {
   width: 1730.06px;
   height: 2773.22px;
   position: absolute;
@@ -121,18 +122,18 @@
   overflow: hidden;
 }
 .image-3 {
-    transform-origin: 0 50%;
-    transform: rotate(0.686deg) scale(1, 1);
-    bottom: 0px;
-    width: 51%;
-    height: auto;
-    position: absolute;
-    right: 0%;
-    left: 1%;
-    top: 41.19%;
-    overflow: hidden;
-    object-fit: cover;
-    clip-path: polygon(-346% -31%, 99% 18%, 81% 88%, -164% 46%);
+  transform-origin: 0 50%;
+  transform: rotate(0.62deg) scale(0.99, 1.01);
+  bottom: 0px;
+  width: 51%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 2%;
+  top: 41.19%;
+  overflow: hidden;
+  object-fit: cover;
+  clip-path: polygon(-346% -31%, 99% 18%, 81% 88%, -164% 46%);
 }
 .image-2 {
     transform-origin: 0 50%;
@@ -325,6 +326,103 @@
   left: 37px;
   top: 47.79px;
 }
+
+.success-message {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #fe4475;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC';
+  bottom: 2932px;
+  top: 10263px;
+  width: 1400px;
+  max-width: 1400px;
+}
+
+.section-heading-text-on-success-form-submission {
+  width: 1366px;
+  height: 162.64px;
+  position: absolute;
+  left: 37px;
+  top: 1087.79px;
+}
+
+.contact-right-on-success-form-submission {
+  width: 683px;
+  height: 162.64px;
+  position: absolute;
+  left: 37px;
+  top: 1355.64px;
+}
+
+.contact-left-on-success-form-submission {
+  width: 683px;
+  height: 162.64px;
+  position: absolute;
+  left: 720px;
+  top: 1355.64px;
+}
+
+.polaroid-photos-composition-on-success-form-submission {
+  width: 1730.06px;
+  height: 2763.22px;
+  position: absolute;
+  left: -17.35px;
+  top: 1349.96px;
+}
+
+.attendance-form-section-on-success-form-submission {
+  display: none;
+  background: #fe4475;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 2932px;
+  top: 10263px;
+  width: 1400px;
+  max-width: 1400px;
+}
+
+.wait-for-you-section-on-success-form-submission {
+  background: #fe4475;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 10226px;
+  height: 4102px;
+}
+
+.root-on-success-form-submission {
+  height: 14329px;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  transform-origin: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-3-on-success-form-submission {
+  transform-origin: 0 50%;
+  transform: rotate(0.62deg) scale(0.99, 1.1);
+  bottom: 0px;
+  width: 51%;
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 2%;
+  top: 41.19%;
+  overflow: hidden;
+  object-fit: cover;
+  clip-path: polygon(-406% -41%, 97% 25%, 79% 88%, -144% 46%);
+}
+
 .div5 {
   color: #f8f5f1;
   text-align: center;
@@ -350,7 +448,7 @@
   bottom: 2932px;
   top: 10263px;
   width: 1400px;
-max-width: 1400px;
+  max-width: 1400px;
 }
 .attendance-form-section-grouped {
   background: #fe4475;
@@ -431,7 +529,7 @@ max-width: 1400px;
 }
 .form-background {
   width: 631.34px;
-  height: 948.02px;
+  height: 1018.02px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -483,7 +581,7 @@ max-width: 1400px;
   position: absolute;
   right: 0px;
   left: 80.87000274658203px;
-  top: 0px;
+  top: -30px;
 }
 .div6 {
   color: #fe4475;
@@ -506,7 +604,7 @@ max-width: 1400px;
   position: absolute;
   right: 0px;
   left: 80.87000274658203px;
-  top: 57.9px;
+  top: -42px;
 }
 .div7 {
   color: #fe4475;
@@ -529,7 +627,7 @@ max-width: 1400px;
   position: absolute;
   right: 0px;
   left: 80.87000274658203px;
-  top: 115.8px;
+  top: -54.2px;
 }
 .div8 {
   color: #fe4475;
@@ -552,7 +650,7 @@ max-width: 1400px;
   position: absolute;
   right: 0px;
   left: 80.87000274658203px;
-  top: 173.7px;
+  top: -65.2px;
 }
 .div9 {
   color: #fe4475;
@@ -575,7 +673,7 @@ max-width: 1400px;
   position: absolute;
   right: 0px;
   left: 80.87000274658203px;
-  top: 231.6px;
+  top: -73.2px;
 }
 .div10 {
   color: #fe4475;
@@ -598,7 +696,7 @@ max-width: 1400px;
   position: absolute;
   right: 0px;
   left: 80.87000274658203px;
-  top: 289.5px;
+  top: -80.2px;
 }
 .div11 {
   color: #fe4475;
@@ -621,7 +719,7 @@ max-width: 1400px;
   height: 118.06px;
   position: absolute;
   left: 0px;
-  top: 345.41px;
+  top: 279.41px;
 }
 .div12 {
   color: #fe4475;
@@ -640,12 +738,32 @@ max-width: 1400px;
   justify-content: flex-start;
 }
 .attendance-options {
-  height: 115.8px;
+  height: 35.8px;
   position: absolute;
   right: -0.01px;
   left: 0px;
   top: 173.22px;
 }
+
+.attendance-form-submit-button {
+  background-color: #fe4475;
+  border: none;
+  color: white;
+  padding: 15px 23px;
+  font-family: 'Amatic SC';
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 835px;
+  left: 170px;
+}
+
 .im-comming-text {
   color: #fe4475;
   text-align: left;
@@ -664,13 +782,22 @@ max-width: 1400px;
 }
 
 .attendance-form-bullet-point {
-  background-color: #fe4475;
-  position: absolute;
-  left: -30px;
-  top: 22px;
   width: 15px;
   height: 15px;
-  clip-path: circle();
+  border: 2px solid #fe4475;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: -30px;
+  top: 20px;
+}
+
+input[type="radio"]:checked + label .attendance-form-bullet-point,
+input[type="checkbox"]:checked + label .attendance-form-bullet-point {
+  background-color: #fe4475;
+  border: none;
 }
 
 .cant-come-text {
@@ -699,7 +826,7 @@ max-width: 1400px;
   font-weight: 700;
   position: absolute;
   left: 0px;
-  top: 113.82px;
+  top: 83.82px;
   width: 345.19px;
   height: 60.15px;
   display: flex;
@@ -1825,7 +1952,8 @@ max-width: 1400px;
   left: -17%;
   bottom: 0%;
   top: 4%;
-  overflow: hidden; 
+  overflow: hidden;
+
   object-fit: cover;
   transform: rotate(93deg);
 }
@@ -3498,9 +3626,15 @@ body {
 
 /* Optional: Add a pulsing effect to arrows when the page loads */
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.05); opacity: 0.7; }
-    100% { transform: scale(1); opacity: 1; }
+    0% { transform: scale(1);
+opacity: 1;
+}
+    50% { transform: scale(1.05);
+opacity: 0.7;
+}
+    100% { transform: scale(1);
+opacity: 1;
+}
 }
 
 .arrow-left,
@@ -3512,4 +3646,139 @@ body {
 .arrow-left img,
 .arrow-right img {
   filter: invert(44%) sepia(69%) saturate(4014%) hue-rotate(320deg) brightness(102%) contrast(99%);
+}
+
+/* Form Styles */
+.attendance-form-bullet-point {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fe4475;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: -30px;
+  top: 20px;
+}
+
+.attendance-radio-im-comming-option {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 230px;
+  left: -40px;
+  z-index: 1000;
+}
+
+.attendance-radio-im-not-comming-option {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 230px;
+  left: -40px;
+  z-index: 1000;
+}
+
+.attendance-form-name-input {
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #fe4475;
+  background: transparent;
+  margin-top: 10px;
+  color: #fe4475;
+  font-family: "Amatic SC";
+  font-size: 47.59735870361328px;
+  line-height: 77px;
+  font-weight: 700;
+}
+
+::placeholder {
+  color:    #fe4475;
+}
+
+input[type="radio"]:checked + label .attendance-form-bullet-point,
+input[type="checkbox"]:checked + label .attendance-form-bullet-point {
+    background-color: #fe4475;
+    border: none;
+}
+
+/* Make labels clickable */
+.alcohol-options .item label,
+.alcohol-options .item2 label,
+.alcohol-options .item3 label,
+.alcohol-options .item4 label,
+.alcohol-options .item5 label,
+.alcohol-options .item6 label,
+.attendance-options .item label,
+.attendance-options .item2 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+form button[type="submit"]:hover {
+    background-color: #ff5a8a;
+    transform: translateY(-2px);
+}
+
+form button[type="submit"] {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Style for alcohol checkboxes */
+.alcohol-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 230px;
+  left: -40px;
+  z-index: 1000;
+}
+
+/* Make sure the bullet points are positioned correctly for all items */
+.alcohol-options .item .attendance-form-bullet-point,
+.alcohol-options .item2 .attendance-form-bullet-point,
+.alcohol-options .item3 .attendance-form-bullet-point,
+.alcohol-options .item4 .attendance-form-bullet-point,
+.alcohol-options .item5 .attendance-form-bullet-point,
+.alcohol-options .item6 .attendance-form-bullet-point {
+  position: absolute;
+  left: -30px;
+  top: 20px;
+}
+
+/* Ensure the parent element has correct positioning for absolute children */
+.alcohol-options .item,
+.alcohol-options .item2,
+.alcohol-options .item3,
+.alcohol-options .item4,
+.alcohol-options .item5,
+.alcohol-options .item6,
+.attendance-options .item,
+.attendance-options .item2 {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/* Remove any inline styles that might be interfering */
+.attendance-form-bullet-point {
+  width: 15px !important;
+  height: 15px !important;
+  border: 2px solid #fe4475 !important;
+  border-radius: 50% !important;
+  margin-right: 15px !important;
+  display: inline-block !important;
+  background-color: transparent !important;
+}
+
+/* Override with !important to ensure these styles take precedence */
+input[type="radio"]:checked + label .attendance-form-bullet-point,
+input[type="checkbox"]:checked + label .attendance-form-bullet-point {
+  background-color: #fe4475 !important;
+  border: none !important;
 }

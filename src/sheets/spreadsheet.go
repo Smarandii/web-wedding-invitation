@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 
 	"google.golang.org/api/option"
 	"google.golang.org/api/sheets/v4"
@@ -57,11 +58,16 @@ func (s *SheetService) AppendRow(data []interface{}) error {
 }
 
 func ConstructCredentialsJSON() (string, error) {
+
+	privateKey := os.Getenv("SERVICE_ACCOUNT_JSON_private_key")
+	// Convert literal \n to actual newlines
+	privateKey = strings.ReplaceAll(privateKey, "\\n", "\n")
+
 	credentials := map[string]interface{}{
 		"type":                        os.Getenv("SERVICE_ACCOUNT_JSON_type"),
 		"project_id":                  os.Getenv("SERVICE_ACCOUNT_JSON_project_id"),
 		"private_key_id":              os.Getenv("SERVICE_ACCOUNT_JSON_private_key_id"),
-		"private_key":                 os.Getenv("SERVICE_ACCOUNT_JSON_private_key"),
+		"private_key":                 privateKey,
 		"client_email":                os.Getenv("SERVICE_ACCOUNT_JSON_client_email"),
 		"client_id":                   os.Getenv("SERVICE_ACCOUNT_JSON_client_id"),
 		"auth_uri":                    os.Getenv("SERVICE_ACCOUNT_JSON_auth_uri"),

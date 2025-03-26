@@ -3466,3 +3466,50 @@ body {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf) format('truetype');
 }
+
+/* Place Gallery Styles */
+.arrow-left,
+.arrow-right {
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.place-image img {
+    transition: opacity 0.5s ease;
+}
+
+.place-image img.transitioning {
+    opacity: 0;
+}
+
+/* Optional: Add a subtle shadow to the gallery */
+.place-image {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Optional: Add a pulsing effect to arrows when the page loads */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.arrow-left,
+.arrow-right {
+    animation: pulse 1s ease-in-out;
+}
+
+/* Update SVG color to match website background */
+.arrow-left img,
+.arrow-right img {
+  filter: invert(44%) sepia(69%) saturate(4014%) hue-rotate(320deg) brightness(102%) contrast(99%);
+}

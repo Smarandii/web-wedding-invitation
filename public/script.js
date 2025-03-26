@@ -182,32 +182,59 @@ const WEDDING_DATE = new Date('2025-07-02T14:00:00');
 // }
 
 function updateImage(direction) {
-    const totalImages = 8; // 0 through 7
     const placeImage = document.querySelector('.place-image img');
-
+    const totalImages = 8; // 0 through 7
     let currentIndex = parseInt(placeImage.dataset.currentIndex);
     
-    // Calculate new index
-    if (direction === 'next') {
-        currentIndex = (currentIndex + 1) % totalImages;
-    } else {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    }
+    // Add transitioning class for fade out
+    placeImage.classList.add('transitioning');
     
-    // Update image source and data attribute
-    const extension = currentIndex === 0 ? 'png' : 'jpg';
-    placeImage.src = `/images/place_of_gathering_${currentIndex}.${extension}`;
-    placeImage.dataset.currentIndex = currentIndex;
+    // Wait for fade out to complete
+    setTimeout(() => {
+        // Calculate new index
+        if (direction === 'next') {
+            currentIndex = (currentIndex + 1) % totalImages;
+        } else {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        }
+        
+        // Update image source and data attribute
+        const extension = currentIndex === 0 ? 'png' : 'jpg';
+        placeImage.src = `/images/place_of_gathering_${currentIndex}.${extension}`;
+        placeImage.dataset.currentIndex = currentIndex;
+        
+        // Remove transitioning class for fade in
+        placeImage.classList.remove('transitioning');
+    }, 300); // Half of the transition duration
 }
 
 function initPlaceGallery() {
-    
     const arrowLeft = document.querySelector('.arrow-left');
     const arrowRight = document.querySelector('.arrow-right');
     
-    // Add click event listeners
-    arrowLeft.addEventListener('click', () => updateImage('prev'));
-    arrowRight.addEventListener('click', () => updateImage('next'));
+    // Add click event listeners with debounce to prevent rapid clicking
+    let isTransitioning = false;
+    
+    function handleClick(direction) {
+        if (isTransitioning) return;
+        
+        isTransitioning = true;
+        updateImage(direction);
+        
+        // Reset transitioning flag after animation completes
+        setTimeout(() => {
+            isTransitioning = false;
+        }, 600); // Full transition duration
+    }
+    
+    arrowLeft.addEventListener('click', () => handleClick('prev'));
+    arrowRight.addEventListener('click', () => handleClick('next'));
+    
+    // Optional: Add keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') handleClick('prev');
+        if (e.key === 'ArrowRight') handleClick('next');
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {

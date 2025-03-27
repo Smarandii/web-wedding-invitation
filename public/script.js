@@ -3,7 +3,114 @@ const WEDDING_DATE = new Date('2025-07-02T14:00:00');
 document.addEventListener('DOMContentLoaded', function() {
     setupFormHandlers();
     initPlaceGallery();
+    calculateCalendarTimeTillWedding();
 });
+
+/**
+ * Returns the correct word form for Russian nouns
+ * based on numeric value, e.g.:
+ *   getWordForm(1, ["день", "дня", "дней"]) => "день"
+ *   getWordForm(2, ["день", "дня", "дней"]) => "дня"
+ *   getWordForm(5, ["день", "дня", "дней"]) => "дней"
+ *
+ * @param {number} value - The numeric value to check
+ * @param {string[]} forms - An array of 3 forms:
+ *   [ "singular", "genitiveSingular", "plural" ]
+ *   e.g. [ "день", "дня", "дней" ]
+ * @returns {string} - The correct form for that number
+ */
+function getWordForm(value, forms) {
+    // Russian language rule:
+    // 1) If last two digits are 11..14 => use plural (forms[2])
+    // 2) Else, look at last digit:
+    //    - 1 => forms[0]
+    //    - 2..4 => forms[1]
+    //    - everything else => forms[2]
+    
+    const lastTwo = value % 100;
+    if (lastTwo >= 11 && lastTwo <= 14) {
+      return forms[2];
+    }
+  
+    const lastDigit = value % 10;
+    switch (lastDigit) {
+      case 1:
+        return forms[0];
+      case 2:
+      case 3:
+      case 4:
+        return forms[1];
+      default:
+        return forms[2];
+    }
+  }
+  
+  function calculateCalendarTimeTillWedding() {
+    const weddingDate = new Date('2025-07-02T14:00:00');
+    let current = new Date(); // "Now"
+  
+    let months = 0;
+    // 1) Count how many full calendar months remain
+    while (true) {
+      let nextMonth = new Date(current);
+      nextMonth.setMonth(nextMonth.getMonth() + 1); 
+      if (nextMonth > weddingDate) {
+        break;
+      }
+      months++;
+      current = nextMonth;
+    }
+  
+    let days = 0;
+    // 2) Count how many full days remain
+    while (true) {
+      let nextDay = new Date(current);
+      nextDay.setDate(nextDay.getDate() + 1);
+      if (nextDay > weddingDate) {
+        break;
+      }
+      days++;
+      current = nextDay;
+    }
+  
+    // 3) Whatever is left is hours/minutes/seconds
+    const hours = Math.floor((weddingDate - current) / (1000 * 60 * 60));
+  
+    // 4) Determine correct word forms in Russian
+    const monthsLabel = getWordForm(months, ["месяц", "месяца", "месяцев"]);
+    const daysLabel   = getWordForm(days,   ["день",   "дня",    "дней"]);
+    const hoursLabel  = getWordForm(hours,  ["час",    "часа",   "часов"]);
+    
+    console.log(`${months} ${monthsLabel} ${days} ${daysLabel} ${hours} ${hoursLabel}`)
+
+    // 5) Update numeric elements
+    document.querySelectorAll('.how_much_months_until_wedding_text')
+      .forEach(element => {
+        element.textContent = months;
+      });
+    document.querySelectorAll('.how_much_days_until_wedding_text')
+      .forEach(element => {
+        element.textContent = days;
+      });
+    document.querySelectorAll('.how_much_hours_until_wedding_text')
+      .forEach(element => {
+        element.textContent = hours;
+      });
+  
+    // 6) Update label elements
+    document.querySelectorAll('.how_much_months_until_wedding_text_label')
+      .forEach(element => {
+        element.textContent = monthsLabel;
+      });
+    document.querySelectorAll('.how_much_days_until_wedding_text_label')
+      .forEach(element => {
+        element.textContent = daysLabel;
+      });
+    document.querySelectorAll('.how_much_hours_until_wedding_text_label')
+      .forEach(element => {
+        element.textContent = hoursLabel;
+      });
+  }  
 
 function setupFormHandlers() {
     const form = document.getElementById('rsvpForm');

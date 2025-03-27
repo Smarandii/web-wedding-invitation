@@ -3,12 +3,13 @@
   box-sizing: border-box;
 }
 .root {
-  width: 1400px;
-  height: 14469px;
+  width: 100%;
+  max-width: 1400px;
+  /* Remove the fixed height so that it grows with content */
+  /* height: 14469px; */
   min-height: 14469px;
   position: relative;
   margin: 0 auto;
-  transform-origin: top center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,6 +126,7 @@
   bottom: 0px;
   top: 0px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .image-3 {
   transform-origin: 0 50%;
@@ -2356,6 +2358,8 @@ max-width: 1400px;
   width: 1400px;
   width: 1400px;
   max-width: 1400px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .groom-glow-background-2 {
   opacity: 0.87;
@@ -2430,7 +2434,8 @@ max-width: 1400px;
   left: 0%;
   bottom: -1.11%;
   top: 0%;
-  
+  overflow-y: hidden;
+  overflow-x: hidden;
   object-fit: cover;
 }
 .bride-glow-background {
@@ -2455,6 +2460,7 @@ max-width: 1400px;
   left: 491.61px;
   top: 489.97px;
   z-index: 100;
+  overflow-x: hidden;
 }
 .container29 {
   position: absolute;
@@ -2463,7 +2469,7 @@ max-width: 1400px;
   bottom: 0px;
   top: 0px;
   overflow-y: hidden;
-  
+  overflow-x: hidden;
 }
 .b-483-de-89-d-7-e-6-fe-136-bc-4-a-4018669-a-7-bb-png {
   width: 161.22%;
@@ -2473,8 +2479,8 @@ max-width: 1400px;
   left: -18.7%;
   bottom: -30.52%;
   top: -29.14%;
-  
   object-fit: cover;
+  overflow-x: hidden;
 }
 .calendar {
   width: 1377.31px;
@@ -3540,14 +3546,14 @@ max-width: 1400px;
 
 html {
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   margin: 0;
   padding: 0;
 }
 
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   margin: 0;
   padding: 0;
   background-color: #fe4475;

@@ -3,10 +3,10 @@
   box-sizing: border-box;
 }
 .root {
+  width: 1400px;
   height: 14469px;
+  min-height: 14469px;
   position: relative;
-  width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
   transform-origin: top center;
   display: flex;
@@ -14,12 +14,17 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 768px) {
+  .arrow-left,
+  .arrow-right {
+    animation: none;
+  }
+}
+
+@media (max-width: 1400px) {
   .root {
     transform: scale(calc(100vw / 1400));
-    height: calc(100vw / 1400 * 100%);
-    width: 1400px;
-/* Keep original width for scaling */
+    transform-origin: top center;
   }
 }
 
@@ -42,7 +47,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .contact-right {
   width: 683px;
@@ -109,7 +114,7 @@
     top: 60.05%;
     transform-origin: 0 50%;
     transform: rotate(0deg) scale(1, 1);
-    overflow: hidden;
+    
     object-fit: cover;
     clip-path: polygon(-196% -68%, 95% 24%, 79% 89%, -34% 46%);
 }
@@ -119,7 +124,7 @@
   left: 0px;
   bottom: 0px;
   top: 0px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .image-3 {
   transform-origin: 0 50%;
@@ -131,7 +136,7 @@
   right: 0%;
   left: 2%;
   top: 41.19%;
-  overflow: hidden;
+  
   object-fit: cover;
   clip-path: polygon(-346% -31%, 99% 18%, 81% 88%, -164% 46%);
 }
@@ -145,7 +150,7 @@
     left: 46%;
     bottom: 0%;
     top: 24.15%;
-    overflow: hidden;
+    
     object-fit: cover;
     clip-path: polygon(-19% -3%, 99% 8%, 101% 85%, 0% 60%);
 }
@@ -298,7 +303,7 @@
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bow {
@@ -316,7 +321,7 @@
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .section-heading-text {
@@ -418,7 +423,7 @@
   right: 0%;
   left: 2%;
   top: 41.19%;
-  overflow: hidden;
+  
   object-fit: cover;
   clip-path: polygon(-406% -41%, 97% 25%, 79% 88%, -144% 46%);
 }
@@ -457,7 +462,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .left-image {
   width: 638.39px;
@@ -481,7 +486,7 @@
   left: 0%;
   bottom: 0%;
   top: -10.45%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .container10 {
@@ -499,7 +504,7 @@
   left: 0%;
   bottom: 0%;
   top: -53.65%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .container11 {
@@ -517,7 +522,7 @@
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .form {
@@ -542,7 +547,7 @@
   left: -7.53%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .form-contents {
@@ -890,7 +895,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .dress-code-colors-element {
   width: 1092.88px;
@@ -938,7 +943,7 @@ max-width: 1400px;
   left: -26.76%;
   bottom: -718.19%;
   top: -57.34%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 ._5-color {
@@ -1001,7 +1006,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .section-heading-text3 {
@@ -1045,7 +1050,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 ._3-wish-element {
   width: 884.06px;
@@ -1076,7 +1081,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
 }
 .image-fill {
   width: 998.29px;
@@ -1084,7 +1089,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image2 {
   width: 997.08px;
@@ -1093,7 +1098,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .group {
   height: auto;
@@ -1110,7 +1115,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 5.17%;
   top: 18.17%;
-  overflow: hidden;
+  
 }
 ._3-e-3-c-749-de-2-a-9-df-6242-cc-31-fcdf-4-a-69-d-0-svg-fill {
   width: 884.06px;
@@ -1118,7 +1123,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 ._3-e-3-c-749-de-2-a-9-df-6242-cc-31-fcdf-4-a-69-d-0-svg2 {
   width: 884.06px;
@@ -1127,7 +1132,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .group2 {
   width: 99.62%;
@@ -1258,7 +1263,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image3 {
   width: 815.94px;
@@ -1267,7 +1272,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .group3 {
   height: auto;
@@ -1289,7 +1294,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image4 {
   width: 800.61px;
@@ -1298,7 +1303,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .id-7-syfxtmavg-8 {
   width: 99.42%;
@@ -1388,7 +1393,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image5 {
   width: 688.5px;
@@ -1397,7 +1402,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .group4 {
   height: auto;
@@ -1495,7 +1500,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .frame-image {
   width: 1673.58px;
@@ -1512,7 +1517,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: -6.58%;
-  overflow: hidden;
+  
 }
 .letter-frame-background-3 {
   width: 1445px;
@@ -1545,7 +1550,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .place-image {
@@ -1563,7 +1568,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .arrow-right {
@@ -1583,7 +1588,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
 }
 .image-fill5 {
   width: 124.32px;
@@ -1591,7 +1596,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image7 {
   width: 123.78px;
@@ -1600,7 +1605,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .id-3-syfxtmavg-8 {
   width: 99.1%;
@@ -1631,7 +1636,7 @@ max-width: 1400px;
   top: 0%;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
-  overflow: hidden;
+  
 }
 .image-fill6 {
   width: 124.31px;
@@ -1639,7 +1644,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image9 {
   width: 100%;
@@ -1651,7 +1656,7 @@ max-width: 1400px;
   top: 0;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
-  overflow: hidden;
+  
 }
 .id-3-syfxtmavg-82 {
   width: 100%;
@@ -1746,7 +1751,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .straight-line {
   width: 2253.06px;
@@ -1774,7 +1779,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .stars-background-1 {
@@ -1793,7 +1798,7 @@ max-width: 1400px;
   left: 0%;
   bottom: -64.06%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .disco-text {
@@ -1862,7 +1867,7 @@ max-width: 1400px;
   left: -17%;
   bottom: 0%;
   top: -1%;
-  overflow: hidden;
+  
   object-fit: cover;
   transform: rotate(93deg);
 }
@@ -1881,7 +1886,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bullet-point-6 {
@@ -1952,7 +1957,7 @@ max-width: 1400px;
   left: -17%;
   bottom: 0%;
   top: 4%;
-  overflow: hidden;
+  
 
   object-fit: cover;
   transform: rotate(93deg);
@@ -1972,7 +1977,7 @@ max-width: 1400px;
   left: -6.54%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bullet-point-5 {
@@ -2050,7 +2055,7 @@ max-width: 1400px;
   left: -5.28%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bullet-point-4 {
@@ -2135,7 +2140,7 @@ max-width: 1400px;
   left: -5.12%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bullet-point-3 {
@@ -2218,7 +2223,7 @@ max-width: 1400px;
   left: 0px;
   bottom: 0.01px;
   top: 0px;
-  overflow: hidden;
+  
 }
 ._6-c-7-fa-925778871-d-8-c-65-f-44-cdd-35-d-3-b-6-a-png {
   width: 100%;
@@ -2228,7 +2233,7 @@ max-width: 1400px;
   left: 0%;
   bottom: -14.3%;
   top: -0.25%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bullet-point-2 {
@@ -2306,7 +2311,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bullet-point-1 {
@@ -2368,7 +2373,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .groom-glow-background {
@@ -2388,7 +2393,7 @@ max-width: 1400px;
   top: 0%;
   transform-origin: 0 0;
   transform: rotate(0deg) scale(-1, 1);
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .groom-stars-background {
@@ -2406,7 +2411,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .groom-image {
@@ -2425,7 +2430,7 @@ max-width: 1400px;
   left: 0%;
   bottom: -1.11%;
   top: 0%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .bride-glow-background {
@@ -2457,7 +2462,8 @@ max-width: 1400px;
   left: 0px;
   bottom: 0px;
   top: 0px;
-  overflow: hidden;
+  overflow-y: hidden;
+  
 }
 .b-483-de-89-d-7-e-6-fe-136-bc-4-a-4018669-a-7-bb-png {
   width: 161.22%;
@@ -2467,7 +2473,7 @@ max-width: 1400px;
   left: -18.7%;
   bottom: -30.52%;
   top: -29.14%;
-  overflow: hidden;
+  
   object-fit: cover;
 }
 .calendar {
@@ -2498,7 +2504,7 @@ max-width: 1400px;
   left: 2.380000114440918px;
   bottom: 202.36px;
   top: 2.369999885559082px;
-  overflow: hidden;
+  
 }
 .div38 {
   color: #000000;
@@ -2524,7 +2530,7 @@ max-width: 1400px;
   left: 275.6499938964844px;
   bottom: 202.36px;
   top: 2.369999885559082px;
-  overflow: hidden;
+  
 }
 .div39 {
   color: #000000;
@@ -2550,7 +2556,7 @@ max-width: 1400px;
   left: 543.3200073242188px;
   bottom: 202.36px;
   top: 2.369999885559082px;
-  overflow: hidden;
+  
 }
 .div40 {
   color: #000000;
@@ -2576,7 +2582,7 @@ max-width: 1400px;
   left: 827.47998046875px;
   bottom: 202.36px;
   top: 2.369999885559082px;
-  overflow: hidden;
+  
 }
 .div41 {
   color: #000000;
@@ -2602,7 +2608,7 @@ max-width: 1400px;
   left: 1105.0799560546875px;
   bottom: 202.36px;
   top: 2.369999885559082px;
-  overflow: hidden;
+  
 }
 .div42 {
   color: #000000;
@@ -2628,7 +2634,7 @@ max-width: 1400px;
   left: 2.380000114440918px;
   bottom: 2.36px;
   top: 69.37000274658203px;
-  overflow: hidden;
+  
 }
 .div43 {
   color: #000000;
@@ -2671,7 +2677,7 @@ max-width: 1400px;
   left: 275.6499938964844px;
   bottom: 2.36px;
   top: 69.37000274658203px;
-  overflow: hidden;
+  
 }
 .div44 {
   color: #000000;
@@ -2714,7 +2720,7 @@ max-width: 1400px;
   left: 543.3200073242188px;
   bottom: 2.36px;
   top: 69.37000274658203px;
-  overflow: hidden;
+  
 }
 .div45 {
   color: #000000;
@@ -2757,7 +2763,7 @@ max-width: 1400px;
   left: 827.47998046875px;
   bottom: 2.36px;
   top: 69.37000274658203px;
-  overflow: hidden;
+  
 }
 ._33 {
   color: #000000;
@@ -2782,7 +2788,7 @@ max-width: 1400px;
   left: 1105.0799560546875px;
   bottom: 2.36px;
   top: 69.37000274658203px;
-  overflow: hidden;
+  
 }
 .div46 {
   color: #000000;
@@ -2842,7 +2848,7 @@ max-width: 1400px;
   left: 0%;
   bottom: 0.01%;
   top: 0%;
-  overflow: hidden;
+  
 }
 .image-fill7 {
   width: 93.12px;
@@ -2850,7 +2856,7 @@ max-width: 1400px;
   position: absolute;
   left: 0px;
   top: 0px;
-  overflow: hidden;
+  
 }
 .image11 {
   width: 93.12px;
@@ -2859,7 +2865,7 @@ max-width: 1400px;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
-  overflow: hidden;
+  
 }
 .id-0-syfxtmavg-8 {
   width: 77.45%;
@@ -2881,7 +2887,7 @@ max-width: 1400px;
   transform: rotate(-57.858deg) scale(1, 1);
   right: 0%;
   bottom: 0%;
-  overflow: hidden;
+  
   width: 440px;
   height: auto;
   position: absolute;
@@ -3533,22 +3539,21 @@ max-width: 1400px;
 }
 
 html {
-  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin: 0;
   padding: 0;
 }
 
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
   background-color: #fe4475;
   font-family: "Roboto", sans-serif;
   font-size: 23.73px;
   line-height: 20px;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 * {
@@ -3621,7 +3626,7 @@ body {
 .place-image {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden;
+    
 }
 
 /* Optional: Add a pulsing effect to arrows when the page loads */

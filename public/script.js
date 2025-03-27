@@ -250,29 +250,36 @@ function updateBulletPoint(input) {
 function updateImage(direction) {
     const placeImage = document.querySelector('.place-image img');
     const totalImages = 8; // 0 through 7
-    let currentIndex = parseInt(placeImage.dataset.currentIndex);
-    
-    // Add transitioning class for fade out
+    let currentIndex = parseInt(placeImage.dataset.currentIndex, 10);
+  
+    // Start fade-out by adding the transitioning class (opacity goes to 0)
     placeImage.classList.add('transitioning');
-    
-    // Wait for fade out to complete
-    setTimeout(() => {
-        // Calculate new index
+  
+    // Listen for the opacity transition to end before switching image
+    const onTransitionEnd = function (e) {
+      if (e.propertyName === 'opacity') {
+        placeImage.removeEventListener('transitionend', onTransitionEnd);
+  
+        // Calculate the new index
         if (direction === 'next') {
-            currentIndex = (currentIndex + 1) % totalImages;
+          currentIndex = (currentIndex + 1) % totalImages;
         } else {
-            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+          currentIndex = (currentIndex - 1 + totalImages) % totalImages;
         }
-        
-        // Update image source and data attribute
         const extension = currentIndex === 0 ? 'png' : 'jpg';
         placeImage.src = `/images/place_of_gathering_${currentIndex}.${extension}`;
         placeImage.dataset.currentIndex = currentIndex;
-        
-        // Remove transitioning class for fade in
+  
+        // Force reflow to ensure the fade-in transition is applied
+        void placeImage.offsetWidth;
+  
+        // Remove the transitioning class to fade in (opacity returns to 1)
         placeImage.classList.remove('transitioning');
-    }, 300); // Half of the transition duration
-}
+      }
+    };
+  
+    placeImage.addEventListener('transitionend', onTransitionEnd);
+}  
 
 function initPlaceGallery() {
     const arrowLeft = document.querySelector('.arrow-left');

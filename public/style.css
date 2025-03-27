@@ -5,8 +5,6 @@
 .root {
   width: 100%;
   max-width: 1400px;
-  /* Remove the fixed height so that it grows with content */
-  /* height: 14469px; */
   min-height: 14469px;
   position: relative;
   margin: 0 auto;
@@ -22,33 +20,20 @@
   }
 }
 
-@media (max-width: 1400px) {
-  .root {
-    transform: scale(calc(100vw / 1400));
-    transform-origin: top center;
-  }
-}
-
 .root div {
   align-items: center;
 }
 
 .wait-for-you-section {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 11536px;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .wait-for-you-section-grouped {
   background: #fe4475;
   width: 1440px;
   height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  
 }
 .contact-right {
   width: 683px;
@@ -384,23 +369,16 @@
 .attendance-form-section-on-success-form-submission {
   display: none;
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 2932px;
-  top: 10263px;
+  position: relative;
   width: 1400px;
+  height: 100%;
   max-width: 1400px;
 }
 
 .wait-for-you-section-on-success-form-submission {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 10226px;
-  height: 4102px;
+  position: relative;
+  height: 100%;
 }
 
 .root-on-success-form-submission {
@@ -449,22 +427,15 @@
 }
 .attendance-form-section {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 2932px;
-  top: 10263px;
+  position: relative;
   width: 1400px;
+  height: 100%;
   max-width: 1400px;
 }
 .attendance-form-section-grouped {
   background: #fe4475;
   width: 1440px;
   height: 1274px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  
 }
 .left-image {
   width: 638.39px;
@@ -882,22 +853,14 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
 }
 .dress-code-section {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 4205px;
-  top: 9189px;
+  position: relative;
   width: 1400px;
-max-width: 1400px;
+  max-width: 1400px;
 }
 .dress-code-section-grouped {
   background: #fe4475;
   width: 1440px;
   height: 1075px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  
 }
 .dress-code-colors-element {
   width: 1092.88px;
@@ -1037,22 +1000,14 @@ max-width: 1400px;
 }
 .wishes-section {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 5279px;
-  top: 6809px;
+  position: relative;
   width: 1400px;
-max-width: 1400px;
+  max-width: 1400px;
 }
 .wishes-section-grouped {
   background: #fe4475;
   width: 1440px;
   height: 2381px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  
 }
 ._3-wish-element {
   width: 884.06px;
@@ -1487,22 +1442,14 @@ max-width: 1400px;
 }
 .place-of-gathering-section {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 7659px;
-  top: 5430px;
+  position: relative;
   width: 1400px;
-max-width: 1400px;
+  max-width: 1400px;
 }
 .place-of-gathering-section-grouped {
   background: #fe4475;
   width: 1440px;
   height: 1380px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  
 }
 .frame-image {
   width: 1673.58px;
@@ -1738,22 +1685,14 @@ max-width: 1400px;
 }
 .what-awaits-you-section {
   background: #fe4475;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 9038px;
-  top: 2314px;
+  position: relative;
   width: 1400px;
-max-width: 1400px;
+  max-width: 1400px;
 }
 .what-awaits-you-section-grouped {
   background: #fe4475;
   width: 1440px;
   height: 3117px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  
 }
 .straight-line {
   width: 2253.06px;
@@ -1821,7 +1760,6 @@ max-width: 1400px;
   left: 50%;
   translate: -50%;
   top: -3.26px;
-  width: 269.35px;
   height: 96px;
   display: flex;
   align-items: center;
@@ -1918,7 +1856,6 @@ max-width: 1400px;
   left: 50%;
   translate: -50%;
   top: -3.26px;
-  width: 265.02px;
   height: 96px;
   display: flex;
   align-items: center;
@@ -2009,7 +1946,6 @@ max-width: 1400px;
   left: 50%;
   translate: -50%;
   top: -3.26px;
-  width: 263.35px;
   height: 96px;
   display: flex;
   align-items: center;
@@ -2172,7 +2108,6 @@ max-width: 1400px;
   left: 50%;
   translate: -50%;
   top: -3.26px;
-  width: 260.38px;
   height: 96px;
   display: flex;
   align-items: center;
@@ -2265,7 +2200,6 @@ max-width: 1400px;
   left: 50%;
   translate: -50%;
   top: -2.88px;
-  width: 259.08px;
   height: 96px;
   display: flex;
   align-items: center;
@@ -2352,10 +2286,7 @@ max-width: 1400px;
 .top-section {
   background: #fe4475;
   height: 2315px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1400px;
+  position: relative;
   width: 1400px;
   max-width: 1400px;
   overflow-y: hidden;

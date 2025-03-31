@@ -5,7 +5,7 @@
   }
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (200px <= width <= 359px) {
   html {
     width: 100%;
     height: 100%;
@@ -15,13 +15,13 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.14;
+    zoom: 0.239;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (360px <= width <= 373px) {
   html {
     width: 100%;
     height: 100%;
@@ -31,13 +31,13 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.28;
+    zoom: 0.250;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (min-width: 432px) {
+@media screen and (374px <= width <= 389px) {
   html {
     width: 100%;
     height: 100%;
@@ -47,13 +47,13 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.30;
+    zoom: 0.26;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (min-width: 599px) {
+@media screen and (390px <= width <= 411px) {
   html {
     width: 100%;
     height: 100%;
@@ -63,13 +63,13 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.42;
+    zoom: 0.27;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (min-width: 899px) {
+@media screen and (412px <= width <= 429px) {
   html {
     width: 100%;
     height: 100%;
@@ -79,13 +79,13 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.625;
+    zoom: 0.285;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (min-width: 1099px) {
+@media screen and (430px <= width <= 540px) {
   html {
     width: 100%;
     height: 100%;
@@ -95,13 +95,109 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.765;
+    zoom: 0.3;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (min-width: 1299px) {
+@media screen and (540px <= width <= 599px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.375;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (600px <= width <= 769px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.534;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (770px <= width <= 821px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.555;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (822px <= width <= 852px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.640;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (853px <= width <= 912px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.580;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (913px <= width <= 1025px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.698;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (1025px <= width <= 1280px) {
   html {
     width: 100%;
     height: 100%;

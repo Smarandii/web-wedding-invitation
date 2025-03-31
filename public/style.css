@@ -5,7 +5,7 @@
   }
 }
 
-@media screen and (max-width: 1499px) {
+@media screen and (min-width: 200px) {
   html {
     width: 100%;
     height: 100%;
@@ -15,7 +15,184 @@
   body {
     width: 100%;
     height: 100%;
-    zoom: 0.25;
+    zoom: 0.14;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.28;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 432px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.30;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 599px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.42;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.625;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.765;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1299px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 0.905;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1499px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 1.04;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1699px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 1.18;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1899px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 1.32;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 2099px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 1.46;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 2299px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    zoom: 1.5;
+    transform-origin: top center;
     overflow-x: hidden;
   }
 }

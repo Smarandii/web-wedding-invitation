@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (1px <= width <= 30000px) {
   .arrow-left,
   .arrow-right {
     animation: none;
@@ -3801,7 +3801,6 @@ body {
 .arrow-left,
 .arrow-right {
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0.7;
 }
 
@@ -3812,7 +3811,7 @@ body {
 }
 
 .place-image img {
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
 }
 
 .place-image img.transitioning {
@@ -3824,24 +3823,6 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     
-}
-
-/* Optional: Add a pulsing effect to arrows when the page loads */
-@keyframes pulse {
-    0% { transform: scale(1);
-opacity: 1;
-}
-    50% { transform: scale(1.05);
-opacity: 0.7;
-}
-    100% { transform: scale(1);
-opacity: 1;
-}
-}
-
-.arrow-left,
-.arrow-right {
-    animation: pulse 1s ease-in-out;
 }
 
 /* Update SVG color to match website background */

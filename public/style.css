@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
     position: absolute;
     left: -3%;
     width: 103%;
-    height: 82.5%;
+    height: 100%;
   }
 
   attendance-form-section {

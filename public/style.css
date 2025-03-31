@@ -1,8 +1,28 @@
+/* For WebKit-based browsers (Chrome, Safari, Opera) */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (1px <= width <= 30000px) {
   .arrow-left,
   .arrow-right {
     animation: none;
   }
+  body {
+    position: absolute;
+    left: -3%;
+    width: 103%;
+    height: 82.5%;
+  }
+
+  attendance-form-section {
+    height: 57%;
+  }
+
+  attendance-form-section-on-success-form-submission {
+    height: 57%;
+  }
+
 }
 
 @media screen and (200px <= width <= 359px) {
@@ -13,12 +33,13 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.239;
+    zoom: 0.259;
     transform-origin: top center;
     overflow-x: hidden;
   }
+
+
 }
 
 @media screen and (360px <= width <= 373px) {
@@ -29,9 +50,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.250;
+    zoom: 0.265;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -45,9 +65,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.26;
+    zoom: 0.28;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -61,11 +80,9 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.27;
+    zoom: 0.29;
     transform-origin: top center;
-    overflow-x: hidden;
   }
 }
 
@@ -77,15 +94,14 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.285;
+    zoom: 0.31;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (430px <= width <= 540px) {
+@media screen and (430px <= width <= 539px) {
   html {
     width: 100%;
     height: 100%;
@@ -93,9 +109,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.3;
+    zoom: 0.32;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -109,9 +124,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.375;
+    zoom: 0.40;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -125,9 +139,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.534;
+    zoom: 0.566;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -141,9 +154,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.555;
+    zoom: 0.61;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -157,15 +169,14 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.640;
+    zoom: 0.660;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (853px <= width <= 912px) {
+@media screen and (853px <= width <= 911px) {
   html {
     width: 100%;
     height: 100%;
@@ -173,15 +184,14 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.580;
+    zoom: 0.630;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (913px <= width <= 1025px) {
+@media screen and (912px <= width <= 912px) {
   html {
     width: 100%;
     height: 100%;
@@ -189,15 +199,14 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 0.698;
+    zoom: 0.68;
     transform-origin: top center;
     overflow-x: hidden;
   }
 }
 
-@media screen and (1025px <= width <= 1280px) {
+@media screen and (913px <= width <= 1024px) {
   html {
     width: 100%;
     height: 100%;
@@ -205,9 +214,38 @@
   }
   
   body {
+    height: 100%;
+    zoom: 0.76;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (1025px <= width <= 1279px) {
+  html {
     width: 100%;
     height: 100%;
-    zoom: 0.905;
+    overflow-x: hidden;
+  }
+  
+  body {
+    height: 100%;
+    zoom: 0.925;
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (1280px <= width <= 1280px) {
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    height: 100%;
+    zoom: 0.945;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -221,9 +259,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 1.04;
+    zoom: 1.24;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -237,9 +274,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 1.18;
+    zoom: 1.38;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -253,9 +289,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 1.32;
+    zoom: 1.52;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -269,9 +304,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 1.46;
+    zoom: 1.66;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -285,9 +319,8 @@
   }
   
   body {
-    width: 100%;
     height: 100%;
-    zoom: 1.5;
+    zoom: 1.7;
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -358,6 +391,7 @@
   position: absolute;
   left: -17.35px;
   top: 175.96px;
+  overflow-y: hidden;
 }
 .image-4 {
   width: 60%;
@@ -632,6 +666,7 @@
   position: absolute;
   left: -17.35px;
   top: 1349.96px;
+  overflow-y: hidden;
 }
 
 .attendance-form-section-on-success-form-submission {
@@ -639,7 +674,6 @@
   background: #fe4475;
   position: relative;
   width: 1400px;
-  height: 47%;
 }
 
 .wait-for-you-section-on-success-form-submission {
@@ -695,7 +729,6 @@
   background: #fe4475;
   position: relative;
   width: 1400px;
-  height: 47%;
 }
 .attendance-form-section-grouped {
   background: #fe4475;
@@ -3801,12 +3834,6 @@ body {
 .arrow-left,
 .arrow-right {
     cursor: pointer;
-    opacity: 0.7;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    transform: scale(1.1);
     opacity: 1;
 }
 

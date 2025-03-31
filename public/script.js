@@ -247,65 +247,36 @@ function updateBulletPoint(input) {
     }
 }
 
+// Updated function without animations
 function updateImage(direction) {
     const placeImage = document.querySelector('.place-image img');
     const totalImages = 8; // 0 through 7
     let currentIndex = parseInt(placeImage.dataset.currentIndex, 10);
-  
-    // Start fade-out by adding the transitioning class (opacity goes to 0)
-    placeImage.classList.add('transitioning');
-  
-    // Listen for the opacity transition to end before switching image
-    const onTransitionEnd = function (e) {
-      if (e.propertyName === 'opacity') {
-        placeImage.removeEventListener('transitionend', onTransitionEnd);
-  
-        // Calculate the new index
-        if (direction === 'next') {
-          currentIndex = (currentIndex + 1) % totalImages;
-        } else {
-          currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-        }
-        const extension = currentIndex === 0 ? 'png' : 'jpg';
-        placeImage.src = `/images/place_of_gathering_${currentIndex}.${extension}`;
-        placeImage.dataset.currentIndex = currentIndex;
-  
-        // Force reflow to ensure the fade-in transition is applied
-        void placeImage.offsetWidth;
-  
-        // Remove the transitioning class to fade in (opacity returns to 1)
-        placeImage.classList.remove('transitioning');
-      }
-    };
-  
-    placeImage.addEventListener('transitionend', onTransitionEnd);
-}  
+    
+    // Calculate the new index without animation
+    if (direction === 'next') {
+        currentIndex = (currentIndex + 1) % totalImages;
+    } else {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    }
+    
+    // Update image source and data attribute directly
+    const extension = currentIndex === 0 ? 'png' : 'jpg';
+    placeImage.src = `/images/place_of_gathering_${currentIndex}.${extension}`;
+    placeImage.dataset.currentIndex = currentIndex;
+}
 
 function initPlaceGallery() {
     const arrowLeft = document.querySelector('.arrow-left');
     const arrowRight = document.querySelector('.arrow-right');
     
-    // Add click event listeners with debounce to prevent rapid clicking
-    let isTransitioning = false;
+    // Simplified click handlers without transition delay
+    arrowLeft.addEventListener('click', () => updateImage('prev'));
+    arrowRight.addEventListener('click', () => updateImage('next'));
     
-    function handleClick(direction) {
-        if (isTransitioning) return;
-        
-        isTransitioning = true;
-        updateImage(direction);
-        
-        // Reset transitioning flag after animation completes
-        setTimeout(() => {
-            isTransitioning = false;
-        }, 600); // Full transition duration
-    }
-    
-    arrowLeft.addEventListener('click', () => handleClick('prev'));
-    arrowRight.addEventListener('click', () => handleClick('next'));
-    
-    // Optional: Add keyboard navigation
+    // Optional: Keep keyboard navigation
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') handleClick('prev');
-        if (e.key === 'ArrowRight') handleClick('next');
+        if (e.key === 'ArrowLeft') updateImage('prev');
+        if (e.key === 'ArrowRight') updateImage('next');
     });
 }

@@ -250,7 +250,7 @@ function updateBulletPoint(input) {
 // Updated function without animations
 function updateImage(direction) {
     const placeImage = document.querySelector('.place-image img');
-    const totalImages = 5; // 0 through 7
+    const totalImages = 5;
     let currentIndex = parseInt(placeImage.dataset.currentIndex, 10);
     
     // Calculate the new index without animation
@@ -259,10 +259,8 @@ function updateImage(direction) {
     } else {
         currentIndex = (currentIndex - 1 + totalImages) % totalImages;
     }
-    
-    // Update image source and data attribute directly
-    const extension = currentIndex === 0 ? 'png' : 'jpg';
-    placeImage.src = `/images/place_of_gathering_${currentIndex}.${extension}`;
+
+    placeImage.src = `/images/place_of_gathering_${currentIndex}.jpg`;
     placeImage.dataset.currentIndex = currentIndex;
 }
 

@@ -1760,15 +1760,16 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
 .place-of-gathering-section-grouped {
   background: #fe4475;
   width: 1440px;
-  height: 1380px;
+  height: 1220px;
 }
 .frame-image {
-  width: 1673.58px;
-  height: 1047.56px;
+  width: 100%;
+  height: auto;
   position: absolute;
   left: -128.15px;
   top: 219.05px;
 }
+
 ._971-ac-18-b-0220-da-29-a-7-ec-940747064139-png {
   width: 100%;
   height: 106.58%;
@@ -1780,13 +1781,12 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   
 }
 .letter-frame-background-3 {
-  width: 1445px;
-  height: 1375px;
+  width: 106%;
+  height: auto;
   position: absolute;
-  left: 130.15px;
-  top: -259.14px;
+  left: 70.15px;
+  top: -50.14px;
   object-fit: cover;
-  aspect-ratio: 1445/1375;
 }
 .bows {
   width: 790.14px;
@@ -1814,11 +1814,13 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   object-fit: cover;
 }
 .place-image {
-  width: 884.48px;
-  height: 590.39px;
+  width: 674.48px;
+  height: 470.39px;
   position: absolute;
-  left: 285.92px;
-  top: 330.3px;
+  left: 432.92px;
+  top: 430.3px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 ._83-bee-10-d-64-db-2751-e-819-e-4449-f-9-d-7-fa-4-png {
   width: 100%;
@@ -1828,15 +1830,14 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   left: 0%;
   bottom: 0%;
   top: 0%;
-  
   object-fit: cover;
 }
 .arrow-right {
-  width: 124.31px;
+  width: 114.31px;
   height: 56.72px;
   position: absolute;
-  left: 1200.96px;
-  top: 597.14px;
+  left: 1120.96px;
+  top: 667.14px;
   fill: #ffb301;
   stroke: #ffb301;
 }
@@ -1868,14 +1869,13 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   
 }
 .id-3-syfxtmavg-8 {
-  width: 99.1%;
-  height: 98.41%;
+  width: 66%;
+  height: auto;
   position: absolute;
-  right: 0.35%;
   left: 0.55%;
-  bottom: 0.66%;
   top: 0.93%;
   overflow: visible;
+  transform: rotate(4deg);
 }
 .arrow-left {
   width: 124.31px;
@@ -1919,28 +1919,26 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   
 }
 .id-3-syfxtmavg-82 {
-  width: 100%;
-  height: 100%;
+  width: 66%;
+  height: auto;
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
+  left: 72%;
+  top: 162%;
   overflow: visible;
-  transform: rotate(-185deg) scale(1, 1);
+  transform: rotate(-364deg) scale(1, 1);
 }
 .address-text {
-  width: 1041.3px;
-  height: 137.61px;
+  width: 991.3px;
+  height: 97.61px;
   position: absolute;
-  left: 222.08px;
-  top: 953.61px;
+  left: 268.08px;
+  top: 907.61px;
 }
 .div29 {
   color: #fe4475;
   text-align: center;
   font-family: "Amatic SC";
-  font-size: 62.11146545410156px;
+  font-size: 52px;
   line-height: 48px;
   font-weight: 700;
   position: absolute;
@@ -1957,13 +1955,13 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   color: #fe4475;
   text-align: center;
   font-family: "Amatic SC";
-  font-size: 62.11146545410156px;
+  font-size: 52px;
   line-height: 48px;
   font-weight: 700;
   position: absolute;
   left: 50%;
   translate: -50%;
-  top: 62.16px;
+  top: 54.16px;
   width: 795.5px;
   height: 77.14px;
   display: flex;
@@ -3861,13 +3859,6 @@ body {
     opacity: 0;
 }
 
-/* Optional: Add a subtle shadow to the gallery */
-.place-image {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    
-}
-
 /* Update SVG color to match website background */
 .arrow-left img,
 .arrow-right img {
@@ -4073,7 +4064,7 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   font-weight: 700;
   position: absolute;
   left: 367.07px;
-  top: 104.7px;
+  top: 100.7px;
 }
 
 .key-word-ideal {
@@ -4115,23 +4106,10 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   top: 19.7px;
 }
 
-.key-word-white {
-  color: #ff7e02;
-  margin: unset;
-  padding: unset;
-  font-family: "Amatic SC";
-  font-size: 59.714825px;
-  line-height: 76px;
-  font-weight: 700;
+.image-carousel-control-panel {
+  height: 400px;
   position: absolute;
-  left: 367.07px;
-  top: 104.7px;
+  transform: rotate(4.7deg);
+  top: 10px;
+  left: 100px;
 }
-
-/* .frame-image {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  left: -128.15px;
-  top: 219.05px;
-} */

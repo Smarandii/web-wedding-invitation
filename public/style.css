@@ -733,7 +733,7 @@ body::-webkit-scrollbar {
 .attendance-form-section-grouped {
   background: #fe4475;
   width: 1440px;
-  height: 1274px;
+  height: 1354px;
 }
 .left-image {
   width: 638.39px;
@@ -798,14 +798,14 @@ body::-webkit-scrollbar {
 }
 .form {
   width: 637.42px;
-  height: 948.02px;
+  height: 1098.02px;
   position: absolute;
   left: 745.68px;
   top: 248.97px;
 }
 .form-background {
   width: 631.34px;
-  height: 1018.02px;
+  height: 1098.02px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -831,9 +831,7 @@ body::-webkit-scrollbar {
 .alcohol-options {
   height: 347.4px;
   position: absolute;
-  right: -0.01px;
-  left: 0px;
-  top: 462.71px;
+  top: 61%;
 }
 
 .alcohol-question-addition {
@@ -994,8 +992,7 @@ body::-webkit-scrollbar {
   width: 526.85px;
   height: 118.06px;
   position: absolute;
-  left: 0px;
-  top: 279.41px;
+  top: 43%;
 }
 .div12 {
   color: #fe4475;
@@ -1007,7 +1004,7 @@ body::-webkit-scrollbar {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 379.88px;
+  width: 419.88px;
   height: 60.16px;
   display: flex;
   align-items: center;
@@ -1016,9 +1013,7 @@ body::-webkit-scrollbar {
 .attendance-options {
   height: 35.8px;
   position: absolute;
-  right: -0.01px;
-  left: 0px;
-  top: 173.22px;
+  top: 31%;
 }
 
 .attendance-form-submit-button {
@@ -1034,10 +1029,10 @@ body::-webkit-scrollbar {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 835px;
-  left: 170px;
+  top: 105%;
+  left: 30%;
 }
 
 .im-comming-text {
@@ -1101,14 +1096,14 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   line-height: 77px;
   font-weight: 700;
   position: absolute;
-  left: 0px;
-  top: 83.82px;
-  width: 345.19px;
+  top: 20%;
+  width: 395.19px;
   height: 60.15px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+
 .name-and-surname-input-element {
   color: #fe4475;
   text-align: left;
@@ -3897,12 +3892,13 @@ body {
   border: none;
   border-bottom: 2px solid #fe4475;
   background: transparent;
-  margin-top: 10px;
   color: #fe4475;
   font-family: "Amatic SC";
   font-size: 47.59735870361328px;
   line-height: 77px;
   font-weight: 700;
+  position: absolute;
+  top: 9%;
 }
 
 ::placeholder {
@@ -3991,4 +3987,18 @@ input[type="radio"]:checked + label .attendance-form-bullet-point,
 input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   background-color: #fe4475 !important;
   border: none !important;
+}
+
+.name-input-container {
+  width: 80%;
+  border: none;
+  background: transparent;
+  margin-top: 10px;
+  color: #fe4475;
+  font-family: "Amatic SC";
+  font-size: 47.59735870361328px;
+  line-height: 77px;
+  font-weight: 700;
+  position: absolute;
+  top: 0%;
 }

@@ -1633,11 +1633,11 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   top: 542.68px;
 }
 .wish-background3 {
-  width: 689.22px;
-  height: 685.47px;
   position: absolute;
-  left: 99.94px;
-  top: -273.16px;
+  left: -4.06px;
+  top: -281.16px;
+  width: 120%;
+  height: auto;
 }
 .image-fill4 {
   width: 689.22px;
@@ -1671,28 +1671,49 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   overflow: visible;
 }
 .wish-text3 {
-  width: 463.24px;
-  height: 143.09px;
+  width: 100%;
+  height: auto;
   position: absolute;
-  left: 213.12px;
-  top: -1.97px;
+  left: 73.12px;
+  top: 1.03px;
 }
 .div26 {
   color: #fe4475;
   text-align: center;
   font-family: "Amatic SC";
-  font-size: 53.71482467651367px;
-  line-height: 66px;
+  font-size: 59.714825px;
+  line-height: 76px;
   font-weight: 700;
   position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 0px;
-  width: 463.24px;
-  height: 68.14px;
-  display: flex;
-  align-items: center;
+  left: 5%;
+  top: 32px;
+  width: 90%;
+  height: auto;
   justify-content: center;
+}
+.key-word-ideal {
+  color: #ff7e02;
+  margin: unset;
+  padding: unset;
+  font-family: "Amatic SC";
+  font-size: 59.714825px;
+  line-height: 76px;
+  font-weight: 700;
+  position: absolute;
+  left: 599.12px;
+  top: 108.03px;
+}
+.key-word-envelope {
+  color: #ff7e02;
+  margin: unset;
+  padding: unset;
+  font-family: "Amatic SC";
+  font-size: 59.714825px;
+  line-height: 76px;
+  font-weight: 700;
+  position: absolute;
+  left: 451.12px;
+  top: 184.03px;
 }
 .div27 {
   color: #fe4475;

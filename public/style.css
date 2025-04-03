@@ -4113,3 +4113,16 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   top: 10px;
   left: 100px;
 }
+
+/* Base styles for elements that will animate in */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Class added when the element comes into view */
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}

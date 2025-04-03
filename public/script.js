@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupFormHandlers();
     initPlaceGallery();
     calculateCalendarTimeTillWedding();
+    initScrollAnimations();
 });
 
 /**
@@ -277,4 +278,32 @@ function initPlaceGallery() {
         if (e.key === 'ArrowLeft') updateImage('prev');
         if (e.key === 'ArrowRight') updateImage('next');
     });
+}
+
+function initScrollAnimations() {
+  // Select all elements to animate
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  
+  // Set up the Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      // If the element is in the viewport
+      if (entry.isIntersecting) {
+        // Add the 'animated' class
+        entry.target.classList.add('animated');
+        // Once it's animated, no need to watch it anymore
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    // Element is considered "visible" when it's 20% in view
+    threshold: 0.2,
+    // Start animations a bit before elements enter the viewport
+    rootMargin: '0px 0px -50px 0px'
+  });
+  
+  // Start observing each element
+  animatedElements.forEach(element => {
+    observer.observe(element);
+  });
 }

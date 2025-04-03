@@ -465,10 +465,11 @@ body::-webkit-scrollbar {
   width: 932px;
   height: 175.63px;
   position: absolute;
-  left: 698.69px;
-  top: 1366.12px;
+  left: 380.69px;
+  top: 1949.12px;
   transform-origin: 0 0;
-  transform: rotate(19.299deg) scale(1, 1);
+  transform: rotate(22deg) scale(1, 1);
+  z-index: 99;
 }
 .div {
   color: #fe4475;
@@ -493,10 +494,11 @@ body::-webkit-scrollbar {
   width: 931.99px;
   height: 175.62px;
   position: absolute;
-  left: 738.27px;
-  top: 393.01px;
+  left: 634.27px;
+  top: 960.01px;
   transform-origin: 0 0;
   transform: rotate(8.486deg) scale(1, 1);
+  z-index: 99;
 }
 .div2 {
   color: #fe4475;
@@ -519,10 +521,11 @@ body::-webkit-scrollbar {
   width: 931.99px;
   height: 175.62px;
   position: absolute;
-  left: 136.54px;
-  top: 891.51px;
+  left: -104.46px;
+  top: 1500.51px;
   transform-origin: 0 0;
   transform: rotate(12.774deg) scale(1, 1);
+  z-index: 99;
 }
 .div3 {
   color: #fe4475;
@@ -547,10 +550,11 @@ body::-webkit-scrollbar {
   width: 932px;
   height: 175.63px;
   position: absolute;
-  left: -30px;
-  top: 212.45px;
+  left: 89px;
+  top: 833.45px;
   transform-origin: 0 0;
   transform: rotate(-13.809deg) scale(1, 1);
+  z-index: 99;
 }
 .div4 {
   color: #fe4475;

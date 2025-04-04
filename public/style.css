@@ -3865,20 +3865,6 @@ body {
   filter: invert(44%) sepia(69%) saturate(4014%) hue-rotate(320deg) brightness(102%) contrast(99%);
 }
 
-/* Form Styles */
-.attendance-form-bullet-point {
-  width: 15px;
-  height: 15px;
-  border: 2px solid #fe4475;
-  border-radius: 50%;
-  margin-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: -30px;
-  top: 20px;
-}
-
 .attendance-radio-im-comming-option {
   position: absolute;
   opacity: 0;
@@ -3900,7 +3886,7 @@ body {
 }
 
 .attendance-form-name-input {
-  width: 80%;
+  width: 70%;
   border: none;
   border-bottom: 2px solid #fe4475;
   background: transparent;
@@ -3911,16 +3897,11 @@ body {
   font-weight: 700;
   position: absolute;
   top: 9%;
+  left: 6%;
 }
 
 ::placeholder {
   color:    #fe4475;
-}
-
-input[type="radio"]:checked + label .attendance-form-bullet-point,
-input[type="checkbox"]:checked + label .attendance-form-bullet-point {
-    background-color: #fe4475;
-    border: none;
 }
 
 /* Make labels clickable */
@@ -3981,24 +3962,6 @@ form button[type="submit"] {
 .attendance-options .item2 {
   position: relative;
   margin-bottom: 15px;
-}
-
-/* Remove any inline styles that might be interfering */
-.attendance-form-bullet-point {
-  width: 15px !important;
-  height: 15px !important;
-  border: 2px solid #fe4475 !important;
-  border-radius: 50% !important;
-  margin-right: 15px !important;
-  display: inline-block !important;
-  background-color: transparent !important;
-}
-
-/* Override with !important to ensure these styles take precedence */
-input[type="radio"]:checked + label .attendance-form-bullet-point,
-input[type="checkbox"]:checked + label .attendance-form-bullet-point {
-  background-color: #fe4475 !important;
-  border: none !important;
 }
 
 .name-input-container {

@@ -241,11 +241,12 @@ function setupFormHandlers() {
 
 // Helper function to update bullet point styling
 function updateBulletPoint(input) {
-    const bullet = input.nextElementSibling.querySelector('.attendance-form-bullet-point');
-    if (bullet) {
-        bullet.style.backgroundColor = input.checked ? '#fe4475' : 'transparent';
-        bullet.style.border = input.checked ? 'none' : '2px solid #fe4475';
-    }
+  // The bullet is the very next sibling, not a nested element
+  const bullet = input.nextElementSibling;
+  if (bullet && bullet.classList.contains('attendance-form-bullet-point')) {
+      bullet.style.backgroundColor = input.checked ? '#fe4475' : 'transparent';
+      bullet.style.border = input.checked ? 'none' : '2px solid #fe4475';
+  }
 }
 
 // Updated function without animations

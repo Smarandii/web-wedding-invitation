@@ -1058,7 +1058,7 @@ body::-webkit-scrollbar {
 
 .attendance-form-bullet-point {
   width: 15px;
-  height: 15px;
+  height: 16px;
   border: 2px solid #fe4475;
   border-radius: 50%;
   margin-right: 15px;

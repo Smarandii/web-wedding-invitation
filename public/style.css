@@ -1181,14 +1181,6 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   top: 0px;
   overflow: visible;
 }
-._6-color {
-  width: 57.52px;
-  height: 57.52px;
-  position: absolute;
-  left: 900px;
-  top: 7.56px;
-  clip-path: circle();
-}
 .container12 {
   width: 55.95px;
   height: 55.96px;
@@ -1207,49 +1199,52 @@ input[type="checkbox"]:checked + label .attendance-form-bullet-point {
   
   object-fit: cover;
 }
-._5-color {
-  position: absolute;
-  left: 750px;
-  top: 7.56px;
-  width: 57px;
-  height: 57px;
-  background-color: #46552a;
-  clip-path: circle();
-}
-._4-color {
-  position: absolute;
-  left: 600px;
-  top: 7.56px;
-  width: 57px;
-  height: 57px;
-  background-color: #fe4475;
-  clip-path: circle();
-}
-._3-color {
-  position: absolute;
-  left: 450px;
-  top: 7.56px;
-  width: 57px;
-  height: 57px;
-  background-color: #ff7e02;
-  clip-path: circle();
-}
 ._2-color {
   position: absolute;
-  left: 300px;
+  left: 160px;
   top: 7.56px;
   width: 57px;
   height: 57px;
   background-color: #ffb301;
   clip-path: circle();
 }
-._1-color {
+
+._3-color {
   position: absolute;
-  left: 150px;
+  left: 340px;
+  width: 57px;
+  height: 57px;
+  background-color: #ff7e02;
+  clip-path: circle();
+  top: 7.56px;
+}
+
+._4-color {
+  position: absolute;
+  left: 520px;
   top: 7.56px;
   width: 57px;
   height: 57px;
-  background-color: #e8e8e8;
+  background-color: #fe4475;
+  clip-path: circle();
+}
+
+._5-color {
+  position: absolute;
+  left: 700px;
+  top: 7.56px;
+  width: 57px;
+  height: 57px;
+  background-color: #46552a;
+  clip-path: circle();
+}
+
+._6-color {
+  position: absolute;
+  left: 880px;
+  top: 7.56px;
+  width: 57.52px;
+  height: 57.52px;
   clip-path: circle();
 }
 .dress-code-image {
